@@ -30,11 +30,18 @@ Strumenti.
 
 const listEl = document.getElementById('list')
 
+
 for(let i = 1; i <= 100; i++){
     
     let itemEl = document.createElement("li");
     itemEl.innerHTML = i;
+    
+    itemEl.style.backgroundColor = "lightblue"
 
+    itemEl.style.listStyle = "none"
+    
+    itemEl.style.margin = "5px"
+    
     listEl.append(itemEl);
 
     if((i % 3 === 0) && (i % 5 === 0)){
