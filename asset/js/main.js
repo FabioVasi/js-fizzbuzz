@@ -82,7 +82,7 @@ for(let i = 1; i <= 100; i++){
 
     if((i % 3 === 0) && (i % 5 === 0)){
         
-        itemEl.style.backgroundColor = "purple"
+        itemEl.style.backgroundColor = "orange"
         console.log('FizzBuzz');
     
     }else if(i % 3 === 0){
@@ -92,7 +92,7 @@ for(let i = 1; i <= 100; i++){
     
     } else if(i % 5 === 0){
     
-        itemEl.style.backgroundColor = "blue"
+        itemEl.style.backgroundColor = "yellow"
         console.log('Buzz');
     
     }
