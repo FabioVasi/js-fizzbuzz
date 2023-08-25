@@ -30,18 +30,31 @@ Strumenti.
 
 const listEl = document.getElementById('list')
 
-
 for(let i = 1; i <= 100; i++){
     
     let itemEl = document.createElement("li");
     itemEl.innerHTML = i;
     
-    itemEl.style.backgroundColor = "lightblue"
+    itemEl.style.backgroundColor = "green"
 
     itemEl.style.listStyle = "none"
     
-    itemEl.style.margin = "5px"
+    itemEl.style.margin = "3px"
+
+    itemEl.style.padding = "5px"
+
+    itemEl.style.aspectRatio = "1 / 1"
+
+    itemEl.style.display = "flex"
+
+    itemEl.style.justifyContent = "center"
+
+    itemEl.style.alignItems = "center"
+
+    itemEl.style.fontSize = "20px"
     
+    itemEl.style.fontWeight = "bold"
+
     listEl.append(itemEl);
 
     if((i % 3 === 0) && (i % 5 === 0)){
@@ -66,6 +79,23 @@ for(let i = 1; i <= 100; i++){
     
     }
 
+
+    if((i % 3 === 0) && (i % 5 === 0)){
+        
+        itemEl.style.backgroundColor = "purple"
+        console.log('FizzBuzz');
+    
+    }else if(i % 3 === 0){
+
+        itemEl.style.backgroundColor = "red"
+        console.log('Fizz');
+    
+    } else if(i % 5 === 0){
+    
+        itemEl.style.backgroundColor = "blue"
+        console.log('Buzz');
+    
+    }
 }
 
 
