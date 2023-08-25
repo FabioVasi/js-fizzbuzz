@@ -15,3 +15,30 @@ Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un ele
 BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 */
+
+/*
+Strumenti.
+
+- console log
+- let / const
+- for
+- if / else
+- getElementById
+- mathRandom
+
+*/
+
+const listEl = document.getElementById('list')
+
+for(let i = 0; i <= 100; i++){
+    
+    console.log(i);
+
+    const itemEl = `<li>${i}</li>`
+
+    listEl.insertAdjacentHTML("beforeend", itemEl);
+
+}
+
+
+
