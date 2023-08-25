@@ -32,13 +32,14 @@ const listEl = document.getElementById('list')
 
 for(let i = 1; i <= 100; i++){
     
-    let itemEl = `<li>${i}</li>`
+    let itemEl = document.createElement("li");
+    itemEl.innerHTML = i;
 
-    listEl.insertAdjacentHTML("beforeend", itemEl);
+    listEl.append(itemEl);
 
     if((i % 3 === 0) && (i % 5 === 0)){
         
-        itemEl.innerHtml = "FizzBuzz"
+        itemEl.innerHTML = 'FizzBuzz'
         console.log('FizzBuzz');
     
     }else if(i % 3 === 0){
