@@ -30,7 +30,7 @@ Strumenti.
 
 const listEl = document.getElementById('list')
 
-for(let i = 0; i <= 100; i++){
+for(let i = 1; i <= 100; i++){
     
     let itemEl = `<li>${i}</li>`
 
@@ -38,7 +38,7 @@ for(let i = 0; i <= 100; i++){
 
     if((i % 3 === 0) && (i % 5 === 0)){
         
-        itemEl.innerHTML = 'FizzBuzz'
+        itemEl.innerHtml = "FizzBuzz"
         console.log('FizzBuzz');
     
     }else if(i % 3 === 0){
@@ -52,7 +52,8 @@ for(let i = 0; i <= 100; i++){
         console.log('Buzz');
     
     } else{
-    
+        
+        itemEl.innerHTML = i;
         console.log(i);
     
     }
