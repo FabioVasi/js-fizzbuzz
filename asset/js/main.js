@@ -22,9 +22,9 @@ Strumenti.
 
 - console log
 - let / const
-- for
 - if / else
 - getElementById
+- for
 
 */
 
@@ -32,21 +32,29 @@ const listEl = document.getElementById('list')
 
 for(let i = 0; i <= 100; i++){
     
-    const itemEl = `<li>${i}</li>`
+    let itemEl = `<li>${i}</li>`
 
     listEl.insertAdjacentHTML("beforeend", itemEl);
 
-    if(i % 3 === 0 &&  i % 5 === 0){
+    if((i % 3 === 0) && (i % 5 === 0)){
+        
         itemEl.innerHTML = 'FizzBuzz'
         console.log('FizzBuzz');
-    }else if( i % 3 === 0){
+    
+    }else if(i % 3 === 0){
+
         itemEl.innerHTML = 'Fizz'
-        console.log('Buzz');
-    } else if(i % 5 === 0){
-        itemEl.innerHTML = 'Buzz'
         console.log('Fizz');
+    
+    } else if(i % 5 === 0){
+    
+        itemEl.innerHTML = 'Buzz'
+        console.log('Buzz');
+    
     } else{
+    
         console.log(i);
+    
     }
 
 }
