@@ -32,66 +32,66 @@ const listEl = document.getElementById('list')
 
 for(let i = 1; i <= 100; i++){
     
-    let itemEl = document.createElement("li");
-    itemEl.innerHTML = i;
+    const liElement = document.createElement('li'); // <li></li>
+    liElement.innerText = i;// <li>1</li>
     
-    itemEl.style.backgroundColor = "green"
+    liElement.style.backgroundColor = "green"
 
-    itemEl.style.listStyle = "none"
+    liElement.style.listStyle = "none"
     
-    itemEl.style.margin = "3px"
+    liElement.style.margin = "3px"
 
-    itemEl.style.padding = "5px"
+    liElement.style.padding = "5px"
 
-    itemEl.style.aspectRatio = "1 / 1"
+    liElement.style.aspectRatio = "1 / 1"
 
-    itemEl.style.display = "flex"
+    liElement.style.display = "flex"
 
-    itemEl.style.justifyContent = "center"
+    liElement.style.justifyContent = "center"
 
-    itemEl.style.alignItems = "center"
+    liElement.style.alignItems = "center"
 
-    itemEl.style.fontSize = "20px"
+    liElement.style.fontSize = "20px"
     
-    itemEl.style.fontWeight = "bold"
+    liElement.style.fontWeight = "bold"
 
-    listEl.append(itemEl);
+    listEl.append(liElement);
 
     if((i % 3 === 0) && (i % 5 === 0)){
         
-        itemEl.innerHTML = 'FizzBuzz'
+        liElement.innerHTML = 'FizzBuzz'
         console.log('FizzBuzz');
     
     }else if(i % 3 === 0){
 
-        itemEl.innerHTML = 'Fizz'
+        liElement.innerHTML = 'Fizz'
         console.log('Fizz');
     
     } else if(i % 5 === 0){
     
-        itemEl.innerHTML = 'Buzz'
+        liElement.innerHTML = 'Buzz'
         console.log('Buzz');
     
     } else{
         
-        itemEl.innerHTML = i;
+        liElement.innerHTML = i;
         console.log(i);
     
     }
 
     if((i % 3 === 0) && (i % 5 === 0)){
         
-        itemEl.style.backgroundColor = "orange"
+        liElement.style.backgroundColor = "orange"
         console.log('FizzBuzz');
     
     }else if(i % 3 === 0){
 
-        itemEl.style.backgroundColor = "red"
+        liElement.style.backgroundColor = "red"
         console.log('Fizz');
     
     } else if(i % 5 === 0){
     
-        itemEl.style.backgroundColor = "yellow"
+        liElement.style.backgroundColor = "yellow"
         console.log('Buzz');
     
     }
