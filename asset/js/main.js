@@ -28,7 +28,7 @@ Strumenti.
 
 */
 
-const listEl = document.getElementById('list')
+const listEl = document.getElementById('list');
 
 for(let i = 1; i <= 100; i++){
     
@@ -96,6 +96,3 @@ for(let i = 1; i <= 100; i++){
     
     }
 }
-
-
-
